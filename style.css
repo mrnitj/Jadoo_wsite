@@ -795,11 +795,26 @@ body {
 }
 
 .subscribe {
-    width: 1300px;
+    width: 1320px;
     height: 490px;
     /* background-color: aqua; */
     align-self: center;
+    position: relative;
+    padding: 1rem;
 }
+.subscribe img:nth-child(1){
+    position: absolute;
+    right: 80px;
+    top: 0;
+    z-index: 1;
+}
+.subscribe img:nth-child(2){
+    position: absolute;
+    right: 80px;
+   bottom: 0;
+   z-index: -2;
+}
+
 
 .subscribe_content_d1 {
     width: 1200px;
@@ -808,55 +823,84 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-.subscribe_content_d2{
+
+
+
+.subscribe_content_d2 {
     width: 1130px;
-height: 407px;
-border-radius: 129px 20px  20px 20px;
-opacity: 0.2;
-background: var(--light-color, #DFD7F9);
-position: relative;
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+    height: 407px;
+    border-radius: 129px 20px 20px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(223, 215, 249, 0.2);
+    padding: 5rem 0;
+    z-index: 2;
 }
 
-.subscribe_content_d2 img:nth-child(1){
+.subscribe_content_d2 img:nth-child(1) {
     position: absolute;
     right: 0;
     top: 0;
+    opacity: 0.2;
 }
 
-.subscribe_content_d2 img:nth-child(2){
+.subscribe_content_d2 img:nth-child(2) {
     position: absolute;
     bottom: 0;
     left: 0;
-    
+    opacity: 0.2;
 }
 
-.subscribe_content_d2 p{
-    color: var(--TEXT-CLR, #5E6282);
-text-align: center;
-font-family: Poppins;
-font-size: 30px;
-font-style: normal;
-font-weight: 600;
-line-height: 54px; /* 163.636% */
-max-width: 859px;
+.subscribe_content_d2 p {
+    color: var(--TEXT-CLR, #5e6282);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 163.636% */
+    max-width: 859px;
+
 }
-.input #envelope{
+.input #envelope {
     position: static;
 }
 
+.d2_input_btn {
+    display: flex;
+    gap: 1rem;  
 
+}
 
+.input {
+    width: 370px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    gap: 1rem;
+}
+.input input {
+    width: 80%;
+    height: 70%;
+    border: none;
+    outline: none;
+}
 
-
-
-
-
-
-
+.d2_input_btn button {
+    width: 110px;
+    height: 100%;
+    border-radius: 10px;
+background: var(--gradient, linear-gradient(180deg, #FF946D 0%, #FF7D68 100%));
+border: none;
+color: white;
+}
 
 
 
